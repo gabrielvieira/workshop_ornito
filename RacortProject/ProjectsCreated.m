@@ -8,7 +8,11 @@
 
 #import "ProjectsCreated.h"
 
+
 @interface ProjectsCreated ()
+
+@property NSArray* projects;
+
 
 @end
 
