@@ -25,7 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
+    
+    self.navigationController.navigationBarHidden = YES;
     // Initialize the recipes array
     Recipe *recipe1 = [Recipe new];
     recipe1.name = @"Egg Benedict";
@@ -167,7 +169,7 @@
     }
     
     cell.nameLabel.text = recipe.name;
-    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
+ 
     cell.prepTimeLabel.text = recipe.prepTime;
     
     return cell;

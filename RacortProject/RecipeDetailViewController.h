@@ -11,9 +11,10 @@
 
 @interface RecipeDetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
+
 @property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
+- (IBAction)btn:(id)sender;
 
 @property (nonatomic, strong) Recipe *recipe;
 
