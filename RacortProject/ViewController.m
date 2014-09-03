@@ -26,10 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonNext:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"next" sender:nil];
 
-}
+
 
 - (IBAction)loginButton:(id)sender {
     
@@ -39,16 +37,21 @@
     
     
     
-    HomeVC *home = [[HomeVC alloc]initWithNibName:@"HomeVC" bundle:nil];
-
+//    HomeVC *home = [[HomeVC alloc]initWithNibName:@"HomeVC" bundle:nil];
+//    //Single *user = [[Single alloc]init];
+//    
+//    NSArray* views = [NSArray arrayWithObject:home];
+    
+    //user.userName = [self.userTextBox text];
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
+    //[tabBarController setViewControllers:views];
     
-    
-    [self presentViewController:tabBarController animated:NO completion:^{
-        NSLog(@"coco");
-    }];
+//
+//    [self presentViewController:tabBarController animated:NO completion:^{
+//        NSLog(@"coco");
+//    }];
     
     
 }

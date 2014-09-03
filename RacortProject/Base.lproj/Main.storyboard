@@ -24,6 +24,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ofj-Rg-gdH"/>
+                                    <action selector="loginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c7t-t3-NSa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuário" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-JJ-7hw">
@@ -55,7 +56,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="t75-Re-Bu1" kind="modal" identifier="next" id="d2U-nZ-Xh8"/>
+                        <outlet property="passwordTextBox" destination="KMv-69-G59" id="8aG-y7-qQF"/>
+                        <outlet property="userTextBox" destination="J2E-Iz-JVx" id="8to-B2-fgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

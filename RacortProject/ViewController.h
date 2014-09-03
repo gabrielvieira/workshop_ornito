@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeVC.h"
-
+#import "Single.h"
 
 @interface ViewController : UIViewController
-- (IBAction)buttonNext:(UIButton *)sender;
+- (IBAction)loginButton:(UIButton *)sender;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *userTextBox;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextBox;
 
 @end

@@ -11,5 +11,6 @@
 @interface Single : NSObject
 
 @property NSArray *lista;
+@property NSString* userName;
 
 @end

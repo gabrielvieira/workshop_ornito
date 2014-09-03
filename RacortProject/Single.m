@@ -32,6 +32,9 @@
     if (!self.lista) {
         self.lista = [[NSArray alloc]init];
     }
+    if(!self.userName){
+        self.userName = [[NSString alloc]init];
+    }
 
     return self;
 }
