@@ -152,6 +152,7 @@
 		CD78626919B732D200154FB3 /* RacortProject */ = {
 			isa = PBXGroup;
 			children = (
+				CD78627519B732D200154FB3 /* Main.storyboard */,
 				CD7FBFD619B78D8C005F5D1A /* Project.h */,
 				CD7FBFD719B78D8C005F5D1A /* Project.m */,
 				CD7FBFD919B79018005F5D1A /* WebService.h */,
@@ -160,7 +161,6 @@
 				CD7862B319B7376100154FB3 /* TabBarController.m */,
 				C0FB218A19B74ECA00C05F88 /* PageContentViewController.h */,
 				C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */,
-				CD78627519B732D200154FB3 /* Main.storyboard */,
 				CD7FBFCC19B746A4005F5D1A /* ProjectsCreated.h */,
 				CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */,
 				CD7FBFCF19B746B8005F5D1A /* GroupsCreated.h */,
