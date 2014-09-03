@@ -26,33 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [[self userTextBox]resignFirstResponder];
 
+}
 
 
 - (IBAction)loginButton:(id)sender {
     
-    
-    //[WebService login:@"new" :@"poli" :@"1234"];
-    // checar login e senha com o banco de dados
-    
-    
-    
-//    HomeVC *home = [[HomeVC alloc]initWithNibName:@"HomeVC" bundle:nil];
-//    //Single *user = [[Single alloc]init];
-//    
-//    NSArray* views = [NSArray arrayWithObject:home];
-    
-    //user.userName = [self.userTextBox text];
-    
-    UITabBarController *tabBarController = [[UITabBarController alloc]init];
-    
-    //[tabBarController setViewControllers:views];
-    
-//
-//    [self presentViewController:tabBarController animated:NO completion:^{
-//        NSLog(@"coco");
-//    }];
-    
+    Single* user = [Single alloc];
+    [user setUserName:[[self userTextBox]text]];
+        
+    [self performSegueWithIdentifier:@"nextView" sender:nil];
     
 }
 @end

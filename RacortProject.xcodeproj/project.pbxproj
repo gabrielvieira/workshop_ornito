@@ -23,7 +23,6 @@
 		CD78628519B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
 		CD78628D19B732D200154FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD78628B19B732D200154FB3 /* InfoPlist.strings */; };
 		CD78628F19B732D200154FB3 /* RacortProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78628E19B732D200154FB3 /* RacortProjectTests.m */; };
-		CD7862AE19B7364C00154FB3 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78629919B733DD00154FB3 /* HomeVC.m */; };
 		CD7862B419B7376100154FB3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862B319B7376100154FB3 /* TabBarController.m */; };
 		CD7862B719B740CF00154FB3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862B619B740CF00154FB3 /* TableViewController.m */; };
 		CD7FBFCE19B746A4005F5D1A /* ProjectsCreated.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */; };
@@ -31,6 +30,7 @@
 		CD7FBFD819B78D8C005F5D1A /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFD719B78D8C005F5D1A /* Project.m */; };
 		CD7FBFDB19B79018005F5D1A /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFDA19B79018005F5D1A /* WebService.m */; };
 		CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFDD19B7927D005F5D1A /* Single.m */; };
+		CD7FBFE419B7A099005F5D1A /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFE319B7A099005F5D1A /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,6 @@
 		CD78628A19B732D200154FB3 /* RacortProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RacortProjectTests-Info.plist"; sourceTree = "<group>"; };
 		CD78628C19B732D200154FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD78628E19B732D200154FB3 /* RacortProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacortProjectTests.m; sourceTree = "<group>"; };
-		CD78629819B733DD00154FB3 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = RacortProjectTests/HomeVC.h; sourceTree = SOURCE_ROOT; };
-		CD78629919B733DD00154FB3 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = RacortProjectTests/HomeVC.m; sourceTree = SOURCE_ROOT; };
 		CD7862B219B7376100154FB3 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		CD7862B319B7376100154FB3 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
 		CD7862B519B740CF00154FB3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -83,6 +81,8 @@
 		CD7FBFDA19B79018005F5D1A /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
 		CD7FBFDC19B7927D005F5D1A /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
 		CD7FBFDD19B7927D005F5D1A /* Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Single.m; sourceTree = "<group>"; };
+		CD7FBFE219B7A099005F5D1A /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = ../HomeVC.h; sourceTree = "<group>"; };
+		CD7FBFE319B7A099005F5D1A /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = ../HomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +143,8 @@
 		CD78626919B732D200154FB3 /* RacortProject */ = {
 			isa = PBXGroup;
 			children = (
+				CD7FBFE219B7A099005F5D1A /* HomeVC.h */,
+				CD7FBFE319B7A099005F5D1A /* HomeVC.m */,
 				CD7FBFDC19B7927D005F5D1A /* Single.h */,
 				CD7FBFDD19B7927D005F5D1A /* Single.m */,
 				CD78627519B732D200154FB3 /* Main.storyboard */,
@@ -202,8 +204,6 @@
 			children = (
 				CD78627819B732D200154FB3 /* ViewController.h */,
 				CD78627919B732D200154FB3 /* ViewController.m */,
-				CD78629819B733DD00154FB3 /* HomeVC.h */,
-				CD78629919B733DD00154FB3 /* HomeVC.m */,
 				C0FB218719B74E1200C05F88 /* PageVC.h */,
 				C0FB218819B74E1200C05F88 /* PageVC.m */,
 			);
@@ -312,6 +312,7 @@
 				CD78627A19B732D200154FB3 /* ViewController.m in Sources */,
 				C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */,
 				CD7FBFCE19B746A4005F5D1A /* ProjectsCreated.m in Sources */,
+				CD7FBFE419B7A099005F5D1A /* HomeVC.m in Sources */,
 				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
 				CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */,
 				CD7FBFD819B78D8C005F5D1A /* Project.m in Sources */,
@@ -328,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD78628F19B732D200154FB3 /* RacortProjectTests.m in Sources */,
-				CD7862AE19B7364C00154FB3 /* HomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

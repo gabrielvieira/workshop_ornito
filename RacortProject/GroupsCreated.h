@@ -10,4 +10,6 @@
 
 @interface GroupsCreated : UITableViewController
 
+@property IBOutlet *UISearchBar;
+
 @end

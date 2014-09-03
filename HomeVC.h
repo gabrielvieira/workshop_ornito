@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Single.h"
 @interface HomeVC : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *userNameBox;
 
 @end

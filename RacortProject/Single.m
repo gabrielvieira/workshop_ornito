@@ -38,6 +38,10 @@
 
     return self;
 }
+-(NSString*)getUserName{
+    return self.userName;
+}
+
 
 
 @end

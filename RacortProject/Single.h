@@ -13,4 +13,7 @@
 @property NSArray *lista;
 @property NSString* userName;
 
++(id) allocWithZone:(struct _NSZone *)zone;
+
+
 @end
