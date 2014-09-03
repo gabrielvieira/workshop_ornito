@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0FB218919B74E1200C05F88 /* PageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218819B74E1200C05F88 /* PageVC.m */; };
+		C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */; };
 		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
 		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
 		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0FB218719B74E1200C05F88 /* PageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageVC.h; sourceTree = "<group>"; };
+		C0FB218819B74E1200C05F88 /* PageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageVC.m; sourceTree = "<group>"; };
+		C0FB218A19B74ECA00C05F88 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,7 +153,11 @@
 		CD78626919B732D200154FB3 /* RacortProject */ = {
 			isa = PBXGroup;
 			children = (
+				C0FB218A19B74ECA00C05F88 /* PageContentViewController.h */,
+				C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */,
 				CD78627519B732D200154FB3 /* Main.storyboard */,
+				C0FB218719B74E1200C05F88 /* PageVC.h */,
+				C0FB218819B74E1200C05F88 /* PageVC.m */,
 				CD7FBFCC19B746A4005F5D1A /* ProjectsCreated.h */,
 				CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */,
 				CD7FBFCF19B746B8005F5D1A /* GroupsCreated.h */,
@@ -306,9 +316,11 @@
 			files = (
 				CD7862B719B740CF00154FB3 /* TableViewController.m in Sources */,
 				CD78627A19B732D200154FB3 /* ViewController.m in Sources */,
+				C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */,
 				CD7FBFCE19B746A4005F5D1A /* ProjectsCreated.m in Sources */,
 				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
 				CD7862AC19B7353C00154FB3 /* ProjectSearchVC.m in Sources */,
+				C0FB218919B74E1200C05F88 /* PageVC.m in Sources */,
 				CD78629D19B734AD00154FB3 /* ProjectVC.m in Sources */,
 				CD78627019B732D200154FB3 /* main.m in Sources */,
 				CD7862A619B7351500154FB3 /* GroupCreateVC.m in Sources */,
