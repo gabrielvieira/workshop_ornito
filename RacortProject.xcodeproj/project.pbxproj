@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
+		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
+		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
+		CD78626E19B732D200154FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD78626C19B732D200154FB3 /* InfoPlist.strings */; };
+		CD78627019B732D200154FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78626F19B732D200154FB3 /* main.m */; };
+		CD78627419B732D200154FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78627319B732D200154FB3 /* AppDelegate.m */; };
+		CD78627719B732D200154FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD78627519B732D200154FB3 /* Main.storyboard */; };
+		CD78627A19B732D200154FB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78627919B732D200154FB3 /* ViewController.m */; };
+		CD78627C19B732D200154FB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD78627B19B732D200154FB3 /* Images.xcassets */; };
+		CD78628319B732D200154FB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78628219B732D200154FB3 /* XCTest.framework */; };
+		CD78628419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
+		CD78628519B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
+		CD78628D19B732D200154FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD78628B19B732D200154FB3 /* InfoPlist.strings */; };
+		CD78628F19B732D200154FB3 /* RacortProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78628E19B732D200154FB3 /* RacortProjectTests.m */; };
+		CD78629D19B734AD00154FB3 /* ProjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78629C19B734AD00154FB3 /* ProjectVC.m */; };
+		CD7862A019B734C600154FB3 /* GroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78629F19B734C600154FB3 /* GroupVC.m */; };
+		CD7862A319B7350500154FB3 /* ProjectCreateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862A219B7350500154FB3 /* ProjectCreateVC.m */; };
+		CD7862A619B7351500154FB3 /* GroupCreateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862A519B7351500154FB3 /* GroupCreateVC.m */; };
+		CD7862A919B7352A00154FB3 /* GroupSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862A819B7352A00154FB3 /* GroupSearchVC.m */; };
+		CD7862AC19B7353C00154FB3 /* ProjectSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862AB19B7353C00154FB3 /* ProjectSearchVC.m */; };
+		CD7862AE19B7364C00154FB3 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78629919B733DD00154FB3 /* HomeVC.m */; };
+		CD7862B419B7376100154FB3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862B319B7376100154FB3 /* TabBarController.m */; };
+		CD7862B719B740CF00154FB3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7862B619B740CF00154FB3 /* TableViewController.m */; };
+		CD7FBFCE19B746A4005F5D1A /* ProjectsCreated.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */; };
+		CD7FBFD119B746B8005F5D1A /* GroupsCreated.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFD019B746B8005F5D1A /* GroupsCreated.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD78628619B732D200154FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD78625819B732D200154FB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD78625F19B732D200154FB3;
+			remoteInfo = RacortProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD78626719B732D200154FB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD78626B19B732D200154FB3 /* RacortProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RacortProject-Info.plist"; sourceTree = "<group>"; };
+		CD78626D19B732D200154FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD78626F19B732D200154FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD78627119B732D200154FB3 /* RacortProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RacortProject-Prefix.pch"; sourceTree = "<group>"; };
+		CD78627219B732D200154FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD78627319B732D200154FB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD78627619B732D200154FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD78627819B732D200154FB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD78627919B732D200154FB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD78627B19B732D200154FB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD78628119B732D200154FB3 /* RacortProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacortProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78628219B732D200154FB3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD78628A19B732D200154FB3 /* RacortProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RacortProjectTests-Info.plist"; sourceTree = "<group>"; };
+		CD78628C19B732D200154FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD78628E19B732D200154FB3 /* RacortProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacortProjectTests.m; sourceTree = "<group>"; };
+		CD78629819B733DD00154FB3 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = RacortProjectTests/HomeVC.h; sourceTree = SOURCE_ROOT; };
+		CD78629919B733DD00154FB3 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = RacortProjectTests/HomeVC.m; sourceTree = SOURCE_ROOT; };
+		CD78629B19B734AD00154FB3 /* ProjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectVC.h; sourceTree = "<group>"; };
+		CD78629C19B734AD00154FB3 /* ProjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectVC.m; sourceTree = "<group>"; };
+		CD78629E19B734C600154FB3 /* GroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupVC.h; sourceTree = "<group>"; };
+		CD78629F19B734C600154FB3 /* GroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupVC.m; sourceTree = "<group>"; };
+		CD7862A119B7350500154FB3 /* ProjectCreateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCreateVC.h; sourceTree = "<group>"; };
+		CD7862A219B7350500154FB3 /* ProjectCreateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCreateVC.m; sourceTree = "<group>"; };
+		CD7862A419B7351500154FB3 /* GroupCreateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupCreateVC.h; sourceTree = "<group>"; };
+		CD7862A519B7351500154FB3 /* GroupCreateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupCreateVC.m; sourceTree = "<group>"; };
+		CD7862A719B7352A00154FB3 /* GroupSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSearchVC.h; sourceTree = "<group>"; };
+		CD7862A819B7352A00154FB3 /* GroupSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSearchVC.m; sourceTree = "<group>"; };
+		CD7862AA19B7353C00154FB3 /* ProjectSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectSearchVC.h; sourceTree = "<group>"; };
+		CD7862AB19B7353C00154FB3 /* ProjectSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectSearchVC.m; sourceTree = "<group>"; };
+		CD7862B219B7376100154FB3 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		CD7862B319B7376100154FB3 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		CD7862B519B740CF00154FB3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		CD7862B619B740CF00154FB3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		CD7FBFCC19B746A4005F5D1A /* ProjectsCreated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsCreated.h; sourceTree = "<group>"; };
+		CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsCreated.m; sourceTree = "<group>"; };
+		CD7FBFCF19B746B8005F5D1A /* GroupsCreated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsCreated.h; sourceTree = "<group>"; };
+		CD7FBFD019B746B8005F5D1A /* GroupsCreated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsCreated.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD78625D19B732D200154FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */,
+				CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */,
+				CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78627E19B732D200154FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78628319B732D200154FB3 /* XCTest.framework in Frameworks */,
+				CD78628519B732D200154FB3 /* UIKit.framework in Frameworks */,
+				CD78628419B732D200154FB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD78625719B732D200154FB3 = {
+			isa = PBXGroup;
+			children = (
+				CD7862B219B7376100154FB3 /* TabBarController.h */,
+				CD7862B319B7376100154FB3 /* TabBarController.m */,
+				CD78626919B732D200154FB3 /* RacortProject */,
+				CD78628819B732D200154FB3 /* RacortProjectTests */,
+				CD78626219B732D200154FB3 /* Frameworks */,
+				CD78626119B732D200154FB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD78626119B732D200154FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD78626019B732D200154FB3 /* RacortProject.app */,
+				CD78628119B732D200154FB3 /* RacortProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD78626219B732D200154FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD78626319B732D200154FB3 /* Foundation.framework */,
+				CD78626519B732D200154FB3 /* CoreGraphics.framework */,
+				CD78626719B732D200154FB3 /* UIKit.framework */,
+				CD78628219B732D200154FB3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD78626919B732D200154FB3 /* RacortProject */ = {
+			isa = PBXGroup;
+			children = (
+				CD78627519B732D200154FB3 /* Main.storyboard */,
+				CD7FBFCC19B746A4005F5D1A /* ProjectsCreated.h */,
+				CD7FBFCD19B746A4005F5D1A /* ProjectsCreated.m */,
+				CD7FBFCF19B746B8005F5D1A /* GroupsCreated.h */,
+				CD7FBFD019B746B8005F5D1A /* GroupsCreated.m */,
+				CD7862B519B740CF00154FB3 /* TableViewController.h */,
+				CD7862B619B740CF00154FB3 /* TableViewController.m */,
+				CD78629819B733DD00154FB3 /* HomeVC.h */,
+				CD78629919B733DD00154FB3 /* HomeVC.m */,
+				CD78627219B732D200154FB3 /* AppDelegate.h */,
+				CD78627319B732D200154FB3 /* AppDelegate.m */,
+				CD78629B19B734AD00154FB3 /* ProjectVC.h */,
+				CD78629C19B734AD00154FB3 /* ProjectVC.m */,
+				CD78629E19B734C600154FB3 /* GroupVC.h */,
+				CD78629F19B734C600154FB3 /* GroupVC.m */,
+				CD7862A119B7350500154FB3 /* ProjectCreateVC.h */,
+				CD7862A219B7350500154FB3 /* ProjectCreateVC.m */,
+				CD7862A419B7351500154FB3 /* GroupCreateVC.h */,
+				CD7862A519B7351500154FB3 /* GroupCreateVC.m */,
+				CD7862A719B7352A00154FB3 /* GroupSearchVC.h */,
+				CD7862A819B7352A00154FB3 /* GroupSearchVC.m */,
+				CD7862AA19B7353C00154FB3 /* ProjectSearchVC.h */,
+				CD7862AB19B7353C00154FB3 /* ProjectSearchVC.m */,
+				CD78627819B732D200154FB3 /* ViewController.h */,
+				CD78627919B732D200154FB3 /* ViewController.m */,
+				CD78627B19B732D200154FB3 /* Images.xcassets */,
+				CD78626A19B732D200154FB3 /* Supporting Files */,
+			);
+			path = RacortProject;
+			sourceTree = "<group>";
+		};
+		CD78626A19B732D200154FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD78626B19B732D200154FB3 /* RacortProject-Info.plist */,
+				CD78626C19B732D200154FB3 /* InfoPlist.strings */,
+				CD78626F19B732D200154FB3 /* main.m */,
+				CD78627119B732D200154FB3 /* RacortProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD78628819B732D200154FB3 /* RacortProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD78628E19B732D200154FB3 /* RacortProjectTests.m */,
+				CD78628919B732D200154FB3 /* Supporting Files */,
+			);
+			path = RacortProjectTests;
+			sourceTree = "<group>";
+		};
+		CD78628919B732D200154FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD78628A19B732D200154FB3 /* RacortProjectTests-Info.plist */,
+				CD78628B19B732D200154FB3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD78625F19B732D200154FB3 /* RacortProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD78629219B732D200154FB3 /* Build configuration list for PBXNativeTarget "RacortProject" */;
+			buildPhases = (
+				CD78625C19B732D200154FB3 /* Sources */,
+				CD78625D19B732D200154FB3 /* Frameworks */,
+				CD78625E19B732D200154FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RacortProject;
+			productName = RacortProject;
+			productReference = CD78626019B732D200154FB3 /* RacortProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD78628019B732D200154FB3 /* RacortProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD78629519B732D200154FB3 /* Build configuration list for PBXNativeTarget "RacortProjectTests" */;
+			buildPhases = (
+				CD78627D19B732D200154FB3 /* Sources */,
+				CD78627E19B732D200154FB3 /* Frameworks */,
+				CD78627F19B732D200154FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD78628719B732D200154FB3 /* PBXTargetDependency */,
+			);
+			name = RacortProjectTests;
+			productName = RacortProjectTests;
+			productReference = CD78628119B732D200154FB3 /* RacortProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD78625819B732D200154FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					CD78628019B732D200154FB3 = {
+						TestTargetID = CD78625F19B732D200154FB3;
+					};
+				};
+			};
+			buildConfigurationList = CD78625B19B732D200154FB3 /* Build configuration list for PBXProject "RacortProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD78625719B732D200154FB3;
+			productRefGroup = CD78626119B732D200154FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD78625F19B732D200154FB3 /* RacortProject */,
+				CD78628019B732D200154FB3 /* RacortProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD78625E19B732D200154FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78627C19B732D200154FB3 /* Images.xcassets in Resources */,
+				CD78626E19B732D200154FB3 /* InfoPlist.strings in Resources */,
+				CD78627719B732D200154FB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78627F19B732D200154FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78628D19B732D200154FB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD78625C19B732D200154FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7862B719B740CF00154FB3 /* TableViewController.m in Sources */,
+				CD78627A19B732D200154FB3 /* ViewController.m in Sources */,
+				CD7FBFCE19B746A4005F5D1A /* ProjectsCreated.m in Sources */,
+				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
+				CD7862AC19B7353C00154FB3 /* ProjectSearchVC.m in Sources */,
+				CD78629D19B734AD00154FB3 /* ProjectVC.m in Sources */,
+				CD78627019B732D200154FB3 /* main.m in Sources */,
+				CD7862A619B7351500154FB3 /* GroupCreateVC.m in Sources */,
+				CD7862A319B7350500154FB3 /* ProjectCreateVC.m in Sources */,
+				CD7862B419B7376100154FB3 /* TabBarController.m in Sources */,
+				CD7862A919B7352A00154FB3 /* GroupSearchVC.m in Sources */,
+				CD7862A019B734C600154FB3 /* GroupVC.m in Sources */,
+				CD7FBFD119B746B8005F5D1A /* GroupsCreated.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78627D19B732D200154FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78628F19B732D200154FB3 /* RacortProjectTests.m in Sources */,
+				CD7862AE19B7364C00154FB3 /* HomeVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD78628719B732D200154FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD78625F19B732D200154FB3 /* RacortProject */;
+			targetProxy = CD78628619B732D200154FB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD78626C19B732D200154FB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD78626D19B732D200154FB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD78627519B732D200154FB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD78627619B732D200154FB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD78628B19B732D200154FB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD78628C19B732D200154FB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD78629019B732D200154FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD78629119B732D200154FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD78629319B732D200154FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RacortProject/RacortProject-Prefix.pch";
+				INFOPLIST_FILE = "RacortProject/RacortProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD78629419B732D200154FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RacortProject/RacortProject-Prefix.pch";
+				INFOPLIST_FILE = "RacortProject/RacortProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD78629619B732D200154FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RacortProject.app/RacortProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RacortProject/RacortProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RacortProjectTests/RacortProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD78629719B732D200154FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RacortProject.app/RacortProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RacortProject/RacortProject-Prefix.pch";
+				INFOPLIST_FILE = "RacortProjectTests/RacortProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD78625B19B732D200154FB3 /* Build configuration list for PBXProject "RacortProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78629019B732D200154FB3 /* Debug */,
+				CD78629119B732D200154FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD78629219B732D200154FB3 /* Build configuration list for PBXNativeTarget "RacortProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78629319B732D200154FB3 /* Debug */,
+				CD78629419B732D200154FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD78629519B732D200154FB3 /* Build configuration list for PBXNativeTarget "RacortProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78629619B732D200154FB3 /* Debug */,
+				CD78629719B732D200154FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD78625819B732D200154FB3 /* Project object */;
+}
