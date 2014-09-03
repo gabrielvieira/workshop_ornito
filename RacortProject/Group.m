@@ -1,14 +1,15 @@
 //
-//  Project.m
+//  Group.m
 //  RacortProject
 //
 //  Created by Polyanna Cunha on 03/09/14.
 //  Copyright (c) 2014 Polyanna Cunha. All rights reserved.
 //
 
-#import "Project.h"
+#import "Group.h"
 
-@implementation Project
+@implementation Group
+
 
 
 @end

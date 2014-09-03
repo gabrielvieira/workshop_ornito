@@ -11,11 +11,11 @@
 @interface Project : NSObject
 
 @property NSString *name;
-@property NSDate *date;
+@property NSString *date;
 @property NSString *description;
 @property NSString* canTeach;
 @property NSString* needLearn;
-@property NSInteger* contact;
+@property NSString* contact;
 @property NSString* area;
 
 

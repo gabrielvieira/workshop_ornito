@@ -13,6 +13,7 @@
 		C0EF4CAF19B7ADAE0017150B /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CAE19B7ADAE0017150B /* Recipe.m */; };
 		C0FB218919B74E1200C05F88 /* PageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218819B74E1200C05F88 /* PageVC.m */; };
 		C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */; };
+		CD0483D019B7B1390098F495 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0483CF19B7B1390098F495 /* Group.m */; };
 		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
 		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
 		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
@@ -60,6 +61,8 @@
 		C0FB218819B74E1200C05F88 /* PageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageVC.m; sourceTree = "<group>"; };
 		C0FB218A19B74ECA00C05F88 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		CD0483CE19B7B1390098F495 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		CD0483CF19B7B1390098F495 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +173,8 @@
 				CD78627519B732D200154FB3 /* Main.storyboard */,
 				CD7FBFD619B78D8C005F5D1A /* Project.h */,
 				CD7FBFD719B78D8C005F5D1A /* Project.m */,
+				CD0483CE19B7B1390098F495 /* Group.h */,
+				CD0483CF19B7B1390098F495 /* Group.m */,
 				CD7FBFD919B79018005F5D1A /* WebService.h */,
 				CD7FBFDA19B79018005F5D1A /* WebService.m */,
 				CD7862B219B7376100154FB3 /* TabBarController.h */,
@@ -337,6 +342,7 @@
 				C0EF4CAA19B7AD260017150B /* RecipeDetailViewController.m in Sources */,
 				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
 				CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */,
+				CD0483D019B7B1390098F495 /* Group.m in Sources */,
 				CD7FBFD819B78D8C005F5D1A /* Project.m in Sources */,
 				C0EF4CAF19B7ADAE0017150B /* Recipe.m in Sources */,
 				C0FB218919B74E1200C05F88 /* PageVC.m in Sources */,
