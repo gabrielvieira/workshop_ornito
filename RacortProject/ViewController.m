@@ -30,4 +30,26 @@
     [self performSegueWithIdentifier:@"next" sender:nil];
 
 }
+
+- (IBAction)loginButton:(id)sender {
+    
+    
+    //[WebService login:@"new" :@"poli" :@"1234"];
+    // checar login e senha com o banco de dados
+    
+    
+    
+    HomeVC *home = [[HomeVC alloc]initWithNibName:@"HomeVC" bundle:nil];
+
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    
+    
+    
+    [self presentViewController:tabBarController animated:NO completion:^{
+        NSLog(@"coco");
+    }];
+    
+    
+}
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeVC.h"
+
 
 @interface ViewController : UIViewController
 - (IBAction)buttonNext:(UIButton *)sender;

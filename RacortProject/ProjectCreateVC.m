@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [searchBar setShowsScopeBar:NO];
 
     
     // Do any additional setup after loading the view.

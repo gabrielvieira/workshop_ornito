@@ -10,4 +10,6 @@
 
 @interface ProjectsCreated : UITableViewController <UISearchDisplayDelegate,UISearchBarDelegate>
 
+@property IBOutlet UISearchBar *projectsSearchBar;
+
 @end
