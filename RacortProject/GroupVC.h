@@ -11,5 +11,8 @@
 @interface GroupVC : UIViewController <UITableViewDelegate, UITableViewDataSource>
 - (IBAction)txt:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property IBOutlet UITextField* searchGroup;
+
 @property (strong, nonatomic) IBOutlet UITableView *TableView;
 @end

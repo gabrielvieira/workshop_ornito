@@ -1,46 +1,43 @@
 //
-//  GroupVC.m
+//  ProjectVC.m
 //  RacortProject
 //
-//  Created by Gabriel Vieira on 04/09/14.
-//  Copyright (c) 2014 Gabriel Vieira. All rights reserved.
+//  Created by Polyanna Cunha on 04/09/14.
+//  Copyright (c) 2014 Polyanna Cunha. All rights reserved.
 //
 
-#import "GroupVC.h"
+#import "ProjectVC.h"
 #import "RecipeTableCell.h"
 #import "RecipeDetailViewController.h"
 #import "Recipe.h"
 #import "Group.h"
 #import "WebService.h"
 
-@interface GroupVC ()
-
-@end
-
-@implementation GroupVC
+@interface ProjectVC ()
 {
     NSMutableArray *recipes;
     NSMutableArray *searchResults;
 }
-- (IBAction)addButton:(id)sender {
-    
-    [self performSegueWithIdentifier:@"createGroupPage" sender:nil];
+
+
+@end
+
+@implementation ProjectVC
+
+- (IBAction)addProject:(id)sender {
+    [self performSegueWithIdentifier:@"createProjectPage" sender:nil];
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [[self searchGroup]resignFirstResponder];
-}
 
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
-    self.TableView.dataSource = self;
-    self.TableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
     
-    [self.TableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
+    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
     
@@ -70,11 +67,11 @@
         
     }
     
-    if (self.TableView == self.searchDisplayController.searchResultsTableView) {
+    if (self.tableView == self.searchDisplayController.searchResultsTableView) {
         [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
         
     } else {
-        [self.TableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
     }
     
 }
@@ -111,7 +108,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CustomTableCell";
-    RecipeTableCell *cell = (RecipeTableCell *)[self.TableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    RecipeTableCell *cell = (RecipeTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
     if (cell == nil) {
@@ -138,7 +135,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail2"]) {
         NSIndexPath *indexPath = nil;
         Recipe *recipe = nil;
         
@@ -146,7 +143,7 @@
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
             recipe = [searchResults objectAtIndex:indexPath.row];
         } else {
-            indexPath = [self.TableView indexPathForSelectedRow];
+            indexPath = [self.tableView indexPathForSelectedRow];
             recipe = [recipes objectAtIndex:indexPath.row];
         }
         
@@ -195,15 +192,15 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)txt:(id)sender {
     
@@ -225,7 +222,9 @@
         [recipes addObject:g];
     }
     
-    [self.TableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-
+    [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+    
 }
+
+
 @end
