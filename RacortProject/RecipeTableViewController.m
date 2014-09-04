@@ -37,6 +37,9 @@
     
     NSString *c = @"";
     [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
+    
+    CGPoint point = CGPointMake(10, 50);
+ 
         // Initialize the recipes array
     
     

@@ -23,7 +23,6 @@
     NSMutableArray *searchResults;
 }
 - (IBAction)addButton:(id)sender {
-    
     [self performSegueWithIdentifier:@"createGroupPage" sender:nil];
 }
 
@@ -44,12 +43,16 @@
     
     NSString *c = @"";
     [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
+    
+    
     // Initialize the recipes array
     
     
     //recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15, recipe16, nil];
     
 }
+
+
 
 -(void)buscaGrupo : (NSString*) busca
 {

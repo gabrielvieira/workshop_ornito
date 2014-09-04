@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateGrouVC : UIViewController
+@interface CreateGrouVC : UIViewController <UITextViewDelegate, UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextView *descriptionTextBox;
+@property UITextView* textArea;
 - (IBAction)backButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *groupLocal;
+@property (weak, nonatomic) IBOutlet UITextField *groupSubject;
+@property (weak, nonatomic) IBOutlet UITextField *groupDuration;
+@property (weak, nonatomic) IBOutlet UITextField *groupHorary;
+
+
 
 @end

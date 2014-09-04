@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     
+    CGPoint point = CGPointMake(10, 200);
+    self.textArea = [self createTextAreaForActionPlan:@"" at:point];
     // Do any additional setup after loading the view.
 }
 
@@ -34,6 +36,26 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    [self.textArea setText:@""];
+    return 1;
+}
+
+- (UITextView*)createTextAreaForActionPlan:(NSString*)title at:(CGPoint)origin
+{
+    //float height = [self createTextLabel:title at:origin];
+    UITextView* textArea = [[UITextView alloc] initWithFrame:CGRectMake(origin.x, origin.y + 50, 290.0f, 100.0f)];
+    [[textArea layer] setBorderWidth:1.0];
+    [[textArea layer]setCornerRadius:4.0];
+    [[textArea layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
+    textArea.text =@"De uma pequena explicação sobre seu projeto."; // this is the default text. how to show in UI TextView.
+    [textArea setFont:[UIFont systemFontOfSize:16.0f]];
+    [textArea setDelegate:self];
+    [[self view] addSubview:textArea];
+    return textArea;
 }
 
 /*

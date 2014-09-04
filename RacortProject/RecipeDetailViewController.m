@@ -31,7 +31,11 @@
 	self.nome.text = self.grupo.name;
     self.lugar.text = self.grupo.local;
     self.horario.text = self.grupo.horario;
+    
+    NSString *c = @"Descricao : ";
+    self.novo.text  = [c stringByAppendingString: self.grupo.description];
 }
+
 
 - (void)didReceiveMemoryWarning
 {

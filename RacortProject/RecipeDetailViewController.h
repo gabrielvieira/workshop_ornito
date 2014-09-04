@@ -10,13 +10,16 @@
 #import "Recipe.h"
 #import "Group.h"
 
-@interface RecipeDetailViewController : UIViewController
+@interface RecipeDetailViewController : UIViewController <UITextViewDelegate, UITextFieldDelegate>
+
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *lugar;
 @property (weak, nonatomic) IBOutlet UILabel *horario;
+@property UITextView* textArea;
 
 - (IBAction)backButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *novo;
 
 @property Group *grupo;
 
