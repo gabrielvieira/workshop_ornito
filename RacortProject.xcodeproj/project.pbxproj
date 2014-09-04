@@ -53,6 +53,7 @@
 		CD7FBFDB19B79018005F5D1A /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFDA19B79018005F5D1A /* WebService.m */; };
 		CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFDD19B7927D005F5D1A /* Single.m */; };
 		CD7FBFE419B7A099005F5D1A /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FBFE319B7A099005F5D1A /* HomeVC.m */; };
+		CD88F1A119B92CDB0052BF5A /* adicionar.png in Resources */ = {isa = PBXBuildFile; fileRef = CD88F1A019B92CDB0052BF5A /* adicionar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		CD7FBFDD19B7927D005F5D1A /* Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Single.m; sourceTree = "<group>"; };
 		CD7FBFE219B7A099005F5D1A /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = ../HomeVC.h; sourceTree = "<group>"; };
 		CD7FBFE319B7A099005F5D1A /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = ../HomeVC.m; sourceTree = "<group>"; };
+		CD88F1A019B92CDB0052BF5A /* adicionar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adicionar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				C008BA3719B8BA3D00A2DDF5 /* tela2.png */,
 				CD197E1319B89EC8004F396C /* grupo.png */,
 				CD197E1419B89EC8004F396C /* home.png */,
+				CD88F1A019B92CDB0052BF5A /* adicionar.png */,
 				CD197E1519B89EC8004F396C /* troca.png */,
 				CD197DF319B894B0004F396C /* projeto.png */,
 				CD197DF519B894B0004F396C /* book.png */,
@@ -391,6 +394,7 @@
 				CD197E1819B89EC8004F396C /* troca.png in Resources */,
 				C0EF4CB619B800410017150B /* top.png in Resources */,
 				CD197E1619B89EC8004F396C /* grupo.png in Resources */,
+				CD88F1A119B92CDB0052BF5A /* adicionar.png in Resources */,
 				CD197DFA19B894B0004F396C /* book.png in Resources */,
 				CD197E7619B8D208004F396C /* plus.png in Resources */,
 				CD78627719B732D200154FB3 /* Main.storyboard in Resources */,

@@ -32,7 +32,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [[self userTextBox]resignFirstResponder];
-
+    [[self passwordTextBox]resignFirstResponder];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

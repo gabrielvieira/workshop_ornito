@@ -29,7 +29,38 @@
     
     CGPoint point = CGPointMake(10, 200);
     self.textArea = [self createTextAreaForActionPlan:@"" at:point];
+    [[self groupDuration]setDelegate:self];
+    [[self groupHorary]setDelegate:self];
+    [[self groupLocal]setDelegate:self];
+    [[self groupSubject]setDelegate:self];
+    [[self textArea]setDelegate:self];
+
     // Do any additional setup after loading the view.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self groupLocal]resignFirstResponder];
+    [[self groupHorary]resignFirstResponder];
+    [[self groupSubject]resignFirstResponder];
+    [[self groupDuration]resignFirstResponder];
+    [[self textArea]resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +84,7 @@
     [[textArea layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
     textArea.text =@"De uma pequena explicação sobre seu projeto."; // this is the default text. how to show in UI TextView.
     [textArea setFont:[UIFont systemFontOfSize:16.0f]];
+    [textArea setTextColor:[UIColor lightGrayColor]];
     [textArea setDelegate:self];
     [[self view] addSubview:textArea];
     return textArea;

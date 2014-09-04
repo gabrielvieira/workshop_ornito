@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *groupDuration;
 @property (weak, nonatomic) IBOutlet UITextField *groupHorary;
 
+@property (weak, nonatomic) IBOutlet UIButton *addGroupButton;
 
 
 @end
