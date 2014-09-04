@@ -28,19 +28,20 @@
 {
     [super viewDidLoad];
     
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+    _pageTitles = @[@"pagina 1", @"pagina2"];
+    _pageImages = @[@"tela1.png", @"tela2.png"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
+    
     
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height +50 );
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
