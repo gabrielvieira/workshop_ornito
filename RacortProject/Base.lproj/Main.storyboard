@@ -63,11 +63,12 @@
                 <tabBarController definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" id="t75-Re-Bu1" customClass="TabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Gzk-fD-P6a"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="D8U-Ne-JHm">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="centered" id="D8U-Ne-JHm">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.23529411764705882" green="0.67843137254901964" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BVT-fR-Vgm" kind="relationship" relationship="viewControllers" id="WlO-ya-VlZ"/>
@@ -83,7 +84,7 @@
         <scene sceneID="D7Y-D7-E7c">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BVT-fR-Vgm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="CxV-yW-4Pj"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home30x30.png" id="CxV-yW-4Pj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dfl-0b-RSK">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -99,7 +100,7 @@
         <scene sceneID="8o6-Eb-s2H">
             <objects>
                 <navigationController definesPresentationContext="YES" id="DMV-L1-gSO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="2xE-Ng-rA2"/>
+                    <tabBarItem key="tabBarItem" title="" image="grupo2.png" id="2xE-Ng-rA2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8Y-Bg-uEH">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -133,7 +134,7 @@
         <scene sceneID="EVx-Vz-u4J">
             <objects>
                 <navigationController definesPresentationContext="YES" id="hPw-MK-VoM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="xfP-Fa-ZAo"/>
+                    <tabBarItem key="tabBarItem" title="" image="project2.png" id="xfP-Fa-ZAo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tvh-Rh-vcE">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -249,17 +250,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-0I-05t">
-                                <rect key="frame" x="26" y="163" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-0I-05t">
+                                <rect key="frame" x="26" y="163" width="65" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="book.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e6-Fr-zyv">
-                                <rect key="frame" x="26" y="298" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e6-Fr-zyv">
+                                <rect key="frame" x="26" y="274" width="65" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="projeto.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -423,8 +424,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home30x30.png" width="30" height="30"/>
+        <image name="book.png" width="336" height="279"/>
         <image name="go.png" width="214" height="45"/>
+        <image name="grupo2.png" width="46" height="30"/>
         <image name="login.png" width="344" height="81"/>
+        <image name="project2.png" width="30" height="30"/>
+        <image name="projeto.png" width="228" height="297"/>
         <image name="seta.png" width="240" height="183"/>
         <image name="top.png" width="729" height="105"/>
     </resources>
