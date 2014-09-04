@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Group.h"
 
 @interface WebService : NSObject
 
 +(BOOL)login : (NSString*)type : (NSString*) name : (NSString*) pass;
 +(NSDictionary*)searchGroup : (NSString *)name;
 
++(BOOL)insertGroup : (Group *)grupo;
 @end

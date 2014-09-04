@@ -21,5 +21,6 @@
 @property NSString* username;
 @property NSString* duration;
 @property NSString* local;
+@property int id_user;
 
 @end

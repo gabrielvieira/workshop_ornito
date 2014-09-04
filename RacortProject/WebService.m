@@ -87,5 +87,49 @@
     return json;
 }
 
++(BOOL)insertGroup : (Group *)grupo
+{
+    NSString *url =  @"http://172.246.16.27/ornito/insertGroup.php";
+    
+    NSString *post = [NSString stringWithFormat:@"name=%@&horary=%@&description=%@&location=%@&contact=%@&id_user=%d", grupo.name , grupo.horario , grupo.description , grupo.local , grupo.contact , grupo.id_user];
+    
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    
+    NSMutableURLRequest *request = [ [ NSMutableURLRequest alloc ] initWithURL: [ NSURL URLWithString: url]];
+    
+    [ request setHTTPMethod: @"POST"];
+    [ request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    
+    [ request setHTTPBody: postData ];
+    NSURLResponse *response;
+    NSError *err;
+    NSData *returnData = [ NSURLConnection sendSynchronousRequest: request returningResponse:&response error:&err];
+    
+    NSString *content = [NSString stringWithUTF8String:[returnData bytes]];
+    
+    int x = [content integerValue];
+    
+    if (x) {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+    /*
+     NSError* error;
+     NSDictionary* json = [NSJSONSerialization
+     JSONObjectWithData:returnData //1
+     
+     options:kNilOptions
+     error:&error];
+     
+     NSString *ret ;
+     
+     for (NSString *s in json) {
+     ret = s;
+     }
+     */
+}
 
 @end
