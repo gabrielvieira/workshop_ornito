@@ -10,4 +10,6 @@
 
 @interface CreateGrouVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextBox;
+
 @end

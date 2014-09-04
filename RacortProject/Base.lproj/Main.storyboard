@@ -73,7 +73,6 @@
                     <connections>
                         <segue destination="BVT-fR-Vgm" kind="relationship" relationship="viewControllers" id="WlO-ya-VlZ"/>
                         <segue destination="DMV-L1-gSO" kind="relationship" relationship="viewControllers" id="jKX-ZM-wJH"/>
-                        <segue destination="hPw-MK-VoM" kind="relationship" relationship="viewControllers" id="OWg-3e-vN0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4r-Pr-06Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,7 +441,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-N7-lvc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-N7-lvc">
                                 <rect key="frame" x="10" y="247" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -455,16 +454,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-HZ-kRa">
-                                <rect key="frame" x="10" y="295" width="300" height="141"/>
+                                <rect key="frame" x="10" y="295" width="300" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hyw-ho-zSy"/>
+                    <connections>
+                        <outlet property="descriptionTextBox" destination="2Jo-HZ-kRa" id="Yba-Gu-CiH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="miD-SF-6LZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
