@@ -39,8 +39,16 @@
     
     Single* user = [Single alloc];
     [user setUserName:[[self userTextBox]text]];
-        
+    
     [self performSegueWithIdentifier:@"nextView" sender:nil];
     
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"nextView"]) {
+        TabBarController* tabBarController = [[TabBarController alloc]init];
+        [[tabBarController tabBar]setTintColor:[UIColor colorWithRed:60 green:173 blue:148 alpha:1]];
+    }
+}
+
 @end

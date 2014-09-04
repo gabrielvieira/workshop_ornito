@@ -1,22 +1,20 @@
 //
-//  ProjectsCreated.m
+//  ProjectsTableView.m
 //  RacortProject
 //
-//  Created by Polyanna Cunha on 03/09/14.
+//  Created by Polyanna Cunha on 04/09/14.
 //  Copyright (c) 2014 Polyanna Cunha. All rights reserved.
 //
 
-#import "ProjectsCreated.h"
+#import "ProjectsTableView.h"
+#import "ProjectsViewController.h"
 
 
-@interface ProjectsCreated ()
-
-@property NSArray* projects;
-
+@interface ProjectsTableView ()
 
 @end
 
-@implementation ProjectsCreated
+@implementation ProjectsTableView
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,7 +29,6 @@
 {
     [super viewDidLoad];
     
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -49,9 +46,17 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

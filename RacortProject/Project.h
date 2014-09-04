@@ -16,7 +16,6 @@
 @property NSString* canTeach;
 @property NSString* needLearn;
 @property NSString* contact;
-@property NSString* area;
 
 
 

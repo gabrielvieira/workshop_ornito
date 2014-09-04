@@ -1,25 +1,24 @@
 //
-//  TabBarController.m
+//  ProjectsViewController.m
 //  RacortProject
 //
-//  Created by Polyanna Cunha on 03/09/14.
+//  Created by Polyanna Cunha on 04/09/14.
 //  Copyright (c) 2014 Polyanna Cunha. All rights reserved.
 //
 
-#import "TabBarController.h"
+#import "ProjectsViewController.h"
 
-@interface TabBarController ()
+@interface ProjectsViewController ()
 
 @end
 
-@implementation TabBarController
+@implementation ProjectsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
     }
     return self;
 }
@@ -27,9 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.hidesBottomBarWhenPushed = YES;
-
     // Do any additional setup after loading the view.
 }
 
@@ -38,11 +34,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (BOOL) hidesBottomBarWhenPushed {
-    return YES;
-}
-
 
 /*
 #pragma mark - Navigation

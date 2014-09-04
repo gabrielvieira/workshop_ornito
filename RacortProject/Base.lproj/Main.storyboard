@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -67,6 +67,7 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.23529411764705882" green="0.67843137254901964" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BVT-fR-Vgm" kind="relationship" relationship="viewControllers" id="WlO-ya-VlZ"/>
@@ -136,10 +137,63 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tvh-Rh-vcE">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="low-wJ-HHJ" kind="relationship" relationship="rootViewController" id="5GG-iC-NtE"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xq-k3-v7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="84" y="289"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="var-Cj-wtL">
+            <objects>
+                <tableViewController id="low-wJ-HHJ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="O7r-TH-FMk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="q8c-kN-b7Q">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q8c-kN-b7Q" id="a0W-LA-93H">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="low-wJ-HHJ" id="aMa-tM-Eaa"/>
+                            <outlet property="delegate" destination="low-wJ-HHJ" id="Ug1-XS-EdW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fhg-U6-2a5"/>
+                    <connections>
+                        <segue destination="dNt-PT-CGJ" kind="modal" id="eIN-Ua-GIc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="605-VP-Yhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="300"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kce-UT-dkE">
+            <objects>
+                <viewController id="dNt-PT-CGJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i4h-Q7-hIA"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdw-2f-C3s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRb-nM-Jdi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvt-mG-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="310"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="eVp-Ae-mWB">
@@ -236,7 +290,7 @@
             </objects>
             <point key="canvasLocation" x="724" y="-1133"/>
         </scene>
-        <!--Recipe Table View Controller - Recipes-->
+        <!--Recipe Table View Controller - Projects-->
         <scene sceneID="IeY-Qp-h3j">
             <objects>
                 <tableViewController id="T1v-Nl-TI4" customClass="RecipeTableViewController" sceneMemberID="viewController">
@@ -287,7 +341,7 @@
                             <outlet property="delegate" destination="T1v-Nl-TI4" id="rIY-tS-Jww"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Recipes" id="q9N-WA-Hka"/>
+                    <navigationItem key="navigationItem" title="Projects" id="q9N-WA-Hka"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="5nG-vx-WmQ" id="5ul-rE-7qG"/>
                     </connections>
@@ -374,6 +428,7 @@
         <image name="seta.png" width="240" height="183"/>
         <image name="top.png" width="729" height="105"/>
     </resources>
+    <color key="tintColor" red="0.23529411764705882" green="0.67843137254901964" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
