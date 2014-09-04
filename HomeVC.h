@@ -10,5 +10,8 @@
 #import "Single.h"
 @interface HomeVC : UIViewController
 @property IBOutlet UILabel* userName;
+@property (weak, nonatomic) IBOutlet UIImageView *userImage;
+@property (weak, nonatomic) IBOutlet UIButton *oldProjects;
+@property (weak, nonatomic) IBOutlet UIButton *atualProjects;
 
 @end

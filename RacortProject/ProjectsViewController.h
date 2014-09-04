@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Recipe.h"
 @interface ProjectsViewController : UIViewController
 
-@property UILabel* managerName;
-@property UILabel* date;
-//@property
 
+
+@property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
+
+
+
+@property (nonatomic, strong) Recipe *recipe;
+- (IBAction)backButton:(id)sender;
 
 @end

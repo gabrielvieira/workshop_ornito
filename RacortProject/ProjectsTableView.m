@@ -7,33 +7,51 @@
 //
 
 #import "ProjectsTableView.h"
+#import "ProjectsTableCell.h"
 #import "ProjectsViewController.h"
-
+#import "Recipe.h"
+#import "Group.h"
+#import "WebService.h"
 
 @interface ProjectsTableView ()
 
 @end
 
 @implementation ProjectsTableView
-
-- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    NSMutableArray *recipes;
+    NSMutableArray *searchResults;
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
+    recipes = [[NSMutableArray alloc]init];
+    self.navigationController.navigationBarHidden = YES;
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // Initialize the recipes array
+    
+    
+    //recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15, recipe16, nil];
+    
+}
+
+-(void)buscaGrupo : (NSString*) busca
+{
+    NSArray *d = (NSArray*)[WebService searchGroup:@""];
+    for (NSDictionary *n in d) {
+        Group *g = Group.new;
+        g.name = [n objectForKey:@"name"];
+        g.local = [n objectForKey:@"location"];
+        g.horario = [n objectForKey:@"horary"] ;
+        g.description = [n objectForKey:@"description"];
+        g.username = [n objectForKey:@"user"];
+        
+        [recipes addObject:g];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,80 +60,114 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+-(void)viewWillAppear:(BOOL)animated
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    [ self.tabBarController.tabBar setHidden:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    /*
+     if (tableView == self.searchDisplayController.searchResultsTableView) {
+     return [searchResults count];
+     
+     } else {
+     return [recipes count];
+     }
+     */
+    return [recipes count];
 }
 
-/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"CustomTableCell";
+    ProjectsTableCell *cell = (ProjectsTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    if (cell == nil) {
+        cell = [[ProjectsTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Display recipe in the table cell
+    Group *recipe = nil;
+    
+    recipe = [recipes objectAtIndex:indexPath.row];
+    /*
+     if (tableView == self.searchDisplayController.searchResultsTableView) {
+     recipe = [searchResults objectAtIndex:indexPath.row];
+     } else {
+     recipe = [recipes objectAtIndex:indexPath.row];
+     }
+     */
+    
+    cell.nameLabel.text = recipe.name;
+    
+    cell.prepTimeLabel.text = recipe.username;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = nil;
+        Recipe *recipe = nil;
+        
+        if (self.searchDisplayController.active) {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            recipe = [searchResults objectAtIndex:indexPath.row];
+        } else {
+            indexPath = [self.tableView indexPathForSelectedRow];
+            recipe = [recipes objectAtIndex:indexPath.row];
+        }
+        
+       ProjectsViewController* destViewController = segue.destinationViewController;
+        //destViewController.recipe = recipe;
+    }
+}
+
+
+//METODO PRA PESQUISAR
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
-    // Return NO if you do not want the specified item to be editable.
+    [recipes removeAllObjects];
+    
+    NSArray *d = (NSArray*)[WebService searchGroup:searchText];
+    
+    NSLog(@"%@", d);
+    for (NSDictionary *n in d) {
+        Group *g = Group.new;
+        g.name = [n objectForKey:@"name"];
+        g.local = [n objectForKey:@"location"];
+        g.horario = [n objectForKey:@"horary"] ;
+        g.description = [n objectForKey:@"description"];
+        g.username = [n objectForKey:@"user"];
+        
+        [recipes addObject:g];
+    }
+    
+    [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+    /*
+     NSLog(@"pesquiseu");
+     
+     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
+     searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
+     */
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
     return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

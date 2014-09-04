@@ -32,6 +32,9 @@
     
     self.navigationController.navigationBarHidden = YES;
     
+    self.userImage.layer.cornerRadius = self.userImage.frame.size.height /2;
+    self.userImage.layer.masksToBounds = YES;
+    self.userImage.layer.borderWidth = 0;
     
     // Do any additional setup after loading the view.
 }
