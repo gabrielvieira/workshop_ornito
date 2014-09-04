@@ -17,6 +17,8 @@
     
     NSString *post = [NSString stringWithFormat:@"type=%@&user=%@&pass=%@",type , name , pass];
     
+    
+    
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
     NSMutableURLRequest *request = [ [ NSMutableURLRequest alloc ] initWithURL: [ NSURL URLWithString: url]];
@@ -55,6 +57,8 @@
     NSString *url =  @"http://172.246.16.27/ornito/group.php";
     
     NSString *post = [NSString stringWithFormat:@"name=%@",name];
+    
+   // NSLog(@"%@" , post);
     
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     

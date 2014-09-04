@@ -28,14 +28,9 @@
     [super viewDidLoad];
    [ self.tabBarController.tabBar setHidden:YES];
     
-	self.title = self.recipe.name;
-    self.prepTimeLabel.text = self.recipe.prepTime;
-    
-    NSMutableString *ingredientsText = [NSMutableString string];
-    for (NSString* ingredient in self.recipe.ingredients) {
-        [ingredientsText appendFormat:@"%@\n", ingredient];
-    }
-    self.ingredientsTextView.text = ingredientsText;
+	self.nome.text = self.grupo.name;
+    self.lugar.text = self.grupo.local;
+    self.horario.text = self.grupo.horario;
 }
 
 - (void)didReceiveMemoryWarning

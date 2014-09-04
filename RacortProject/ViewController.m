@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WebService.h"
+#import "TabBarController.h"
 
 @interface ViewController ()
 
@@ -33,6 +34,18 @@
     [[self userTextBox]resignFirstResponder];
 
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"nextView"]) {
+                
+        
+        //TabBarController *destViewController = segue.destinationViewController;
+         [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+        
+       // [[UITabBar appearance] setSelectedImageTintColor:[UIColor redColor]];
+    }
+}
+
 
 
 - (IBAction)loginButton:(id)sender {

@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
+#import "Group.h"
 
 @interface RecipeDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *nome;
+@property (weak, nonatomic) IBOutlet UILabel *lugar;
+@property (weak, nonatomic) IBOutlet UILabel *horario;
 
-@property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
-@property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
-
-
-
-@property (nonatomic, strong) Recipe *recipe;
 - (IBAction)backButton:(id)sender;
+
+@property Group *grupo;
 
 @end

@@ -11,5 +11,6 @@
 @interface CreateGrouVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextBox;
+- (IBAction)backButton:(id)sender;
 
 @end

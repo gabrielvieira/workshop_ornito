@@ -138,7 +138,7 @@
     if ([segue.identifier isEqualToString:@"showRecipeDetail2"]) {
         NSIndexPath *indexPath = nil;
         Recipe *recipe = nil;
-        
+        /*
         if (self.searchDisplayController.active) {
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
             recipe = [searchResults objectAtIndex:indexPath.row];
@@ -149,6 +149,7 @@
         
         RecipeDetailViewController *destViewController = segue.destinationViewController;
         destViewController.recipe = recipe;
+         */
     }
 }
 

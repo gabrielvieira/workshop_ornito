@@ -39,8 +39,6 @@
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
     
-    
-    [self.TableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
     
@@ -140,18 +138,15 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
         NSIndexPath *indexPath = nil;
-        Recipe *recipe = nil;
+        Group *recipe = nil;
         
-        if (self.searchDisplayController.active) {
-            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-            recipe = [searchResults objectAtIndex:indexPath.row];
-        } else {
+        
             indexPath = [self.TableView indexPathForSelectedRow];
             recipe = [recipes objectAtIndex:indexPath.row];
-        }
+        
         
         RecipeDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.recipe = recipe;
+        destViewController.grupo = recipe;
     }
 }
 
