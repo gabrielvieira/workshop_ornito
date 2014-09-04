@@ -29,11 +29,19 @@
     [super viewDidLoad];
     [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
-    
-    
     self.navigationController.navigationBarHidden = YES;
     
-    NSArray *d = (NSArray*)[WebService searchGroup:@"a"];
+    
+        // Initialize the recipes array
+    
+    
+       //recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15, recipe16, nil];
+    
+}
+
+-(void)buscaGrupo : (NSString*) busca
+{
+    NSArray *d = (NSArray*)[WebService searchGroup:@""];
     for (NSDictionary *n in d) {
         Group *g = Group.new;
         g.name = [n objectForKey:@"name"];
@@ -44,11 +52,6 @@
         
         [recipes addObject:g];
     }
-    // Initialize the recipes array
-    
-    
-       //recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15, recipe16, nil];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,12 +67,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    /*
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchResults count];
         
     } else {
         return [recipes count];
     }
+     */
+    return [recipes count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,11 +95,15 @@
     
     // Display recipe in the table cell
     Group *recipe = nil;
+    
+    recipe = [recipes objectAtIndex:indexPath.row];
+    /*
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         recipe = [searchResults objectAtIndex:indexPath.row];
     } else {
         recipe = [recipes objectAtIndex:indexPath.row];
     }
+     */
     
     cell.nameLabel.text = recipe.name;
  
@@ -124,9 +134,11 @@
 //METODO PRA PESQUISAR
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
-    [searchResults removeAllObjects];
+    [recipes removeAllObjects];
     
-    NSArray *d = (NSArray*)[WebService searchGroup:@"foto"];
+    NSArray *d = (NSArray*)[WebService searchGroup:searchText];
+    
+    NSLog(@"%@", d);
     for (NSDictionary *n in d) {
         Group *g = Group.new;
         g.name = [n objectForKey:@"name"];
@@ -135,10 +147,10 @@
         g.description = [n objectForKey:@"description"];
         g.username = [n objectForKey:@"user"];
         
-        [searchResults addObject:g];
+        [recipes addObject:g];
     }
 
-    
+    [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
     /*
     NSLog(@"pesquiseu");
     
