@@ -28,6 +28,8 @@
     [super viewDidLoad];
     
     Single* user = [Single alloc];
+    [self.userName setText:[user userName]];
+    
     self.navigationController.navigationBarHidden = YES;
     
     

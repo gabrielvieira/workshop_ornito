@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Single.h"
 @interface HomeVC : UIViewController
-
+@property IBOutlet UILabel* userName;
 
 @end

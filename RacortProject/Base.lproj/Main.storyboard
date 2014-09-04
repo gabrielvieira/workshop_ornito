@@ -84,7 +84,7 @@
         <scene sceneID="D7Y-D7-E7c">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BVT-fR-Vgm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Home30x30.png" id="CxV-yW-4Pj"/>
+                    <tabBarItem key="tabBarItem" title="" image="home.png" id="CxV-yW-4Pj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dfl-0b-RSK">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -100,7 +100,7 @@
         <scene sceneID="8o6-Eb-s2H">
             <objects>
                 <navigationController definesPresentationContext="YES" id="DMV-L1-gSO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="grupo2.png" id="2xE-Ng-rA2"/>
+                    <tabBarItem key="tabBarItem" title="" image="grupo.png" id="2xE-Ng-rA2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8Y-Bg-uEH">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -134,7 +134,7 @@
         <scene sceneID="EVx-Vz-u4J">
             <objects>
                 <navigationController definesPresentationContext="YES" id="hPw-MK-VoM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="project2.png" id="xfP-Fa-ZAo"/>
+                    <tabBarItem key="tabBarItem" title="" image="troca.png" id="xfP-Fa-ZAo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tvh-Rh-vcE">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -251,41 +251,49 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-0I-05t">
-                                <rect key="frame" x="26" y="163" width="65" height="47"/>
+                                <rect key="frame" x="26" y="202" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="book.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e6-Fr-zyv">
-                                <rect key="frame" x="26" y="274" width="65" height="53"/>
+                                <rect key="frame" x="26" y="300" width="60" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="projeto.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-jO-Pzy">
-                                <rect key="frame" x="26" y="134" width="256" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-jO-Pzy">
+                                <rect key="frame" x="122" y="105" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93187415080000002" green="0.0" blue="0.15416685999999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z0Z-mV-0Vu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="J7P-zk-55x">
+                                <rect key="frame" x="16" y="80" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4c-WT-ftz">
-                                <rect key="frame" x="20" y="30" width="49" height="31"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Antigos projetos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-qd-XzZ">
+                                <rect key="frame" x="122" y="216" width="150" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="seta.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projetos atuais" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SX-Um-g2B">
+                                <rect key="frame" x="122" y="322" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="a0d-XU-Xyg"/>
+                    <connections>
+                        <outlet property="userName" destination="GXx-jO-Pzy" id="z9P-ZA-v3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Teq-Dv-bjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,15 +432,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home30x30.png" width="30" height="30"/>
         <image name="book.png" width="336" height="279"/>
         <image name="go.png" width="214" height="45"/>
-        <image name="grupo2.png" width="46" height="30"/>
+        <image name="grupo.png" width="49" height="30"/>
+        <image name="home.png" width="30" height="30"/>
         <image name="login.png" width="344" height="81"/>
-        <image name="project2.png" width="30" height="30"/>
         <image name="projeto.png" width="228" height="297"/>
         <image name="seta.png" width="240" height="183"/>
         <image name="top.png" width="729" height="105"/>
+        <image name="troca.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="0.23529411764705882" green="0.67843137254901964" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

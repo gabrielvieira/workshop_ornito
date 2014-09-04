@@ -23,9 +23,9 @@
 		CD197DF219B88636004F396C /* ProjectsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197DF119B88636004F396C /* ProjectsTableCell.m */; };
 		CD197DF819B894B0004F396C /* projeto.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197DF319B894B0004F396C /* projeto.png */; };
 		CD197DFA19B894B0004F396C /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197DF519B894B0004F396C /* book.png */; };
-		CD197E0819B89909004F396C /* Home30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E0519B89909004F396C /* Home30x30.png */; };
-		CD197E0A19B89972004F396C /* project2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E0919B89972004F396C /* project2.png */; };
-		CD197E0C19B899E0004F396C /* grupo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E0B19B899E0004F396C /* grupo2.png */; };
+		CD197E1619B89EC8004F396C /* grupo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1319B89EC8004F396C /* grupo.png */; };
+		CD197E1719B89EC8004F396C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1419B89EC8004F396C /* home.png */; };
+		CD197E1819B89EC8004F396C /* troca.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1519B89EC8004F396C /* troca.png */; };
 		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
 		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
 		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
@@ -85,9 +85,9 @@
 		CD197DF119B88636004F396C /* ProjectsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsTableCell.m; sourceTree = "<group>"; };
 		CD197DF319B894B0004F396C /* projeto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projeto.png; sourceTree = "<group>"; };
 		CD197DF519B894B0004F396C /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
-		CD197E0519B89909004F396C /* Home30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home30x30.png; sourceTree = "<group>"; };
-		CD197E0919B89972004F396C /* project2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project2.png; sourceTree = "<group>"; };
-		CD197E0B19B899E0004F396C /* grupo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grupo2.png; sourceTree = "<group>"; };
+		CD197E1319B89EC8004F396C /* grupo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grupo.png; sourceTree = "<group>"; };
+		CD197E1419B89EC8004F396C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		CD197E1519B89EC8004F396C /* troca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = troca.png; sourceTree = "<group>"; };
 		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,9 +148,9 @@
 		C0EF4CB019B7BC8E0017150B /* img */ = {
 			isa = PBXGroup;
 			children = (
-				CD197E0B19B899E0004F396C /* grupo2.png */,
-				CD197E0919B89972004F396C /* project2.png */,
-				CD197E0519B89909004F396C /* Home30x30.png */,
+				CD197E1319B89EC8004F396C /* grupo.png */,
+				CD197E1419B89EC8004F396C /* home.png */,
+				CD197E1519B89EC8004F396C /* troca.png */,
 				CD197DF319B894B0004F396C /* projeto.png */,
 				CD197DF519B894B0004F396C /* book.png */,
 				C0EF4CB719B802DA0017150B /* seta.png */,
@@ -352,14 +352,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD197E0C19B899E0004F396C /* grupo2.png in Resources */,
 				CD78627C19B732D200154FB3 /* Images.xcassets in Resources */,
 				CD197DF819B894B0004F396C /* projeto.png in Resources */,
+				CD197E1719B89EC8004F396C /* home.png in Resources */,
 				C0EF4CB419B7BC8E0017150B /* login.png in Resources */,
-				CD197E0819B89909004F396C /* Home30x30.png in Resources */,
-				CD197E0A19B89972004F396C /* project2.png in Resources */,
 				CD78626E19B732D200154FB3 /* InfoPlist.strings in Resources */,
+				CD197E1819B89EC8004F396C /* troca.png in Resources */,
 				C0EF4CB619B800410017150B /* top.png in Resources */,
+				CD197E1619B89EC8004F396C /* grupo.png in Resources */,
 				CD197DFA19B894B0004F396C /* book.png in Resources */,
 				CD78627719B732D200154FB3 /* Main.storyboard in Resources */,
 				C0EF4CB319B7BC8E0017150B /* go.png in Resources */,
