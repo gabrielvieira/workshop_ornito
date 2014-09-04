@@ -11,5 +11,6 @@
 @interface WebService : NSObject
 
 +(BOOL)login : (NSString*)type : (NSString*) name : (NSString*) pass;
++(NSDictionary*)searchGroup : (NSString *)name;
 
 @end
