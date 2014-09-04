@@ -32,7 +32,6 @@
 {
     
     [super viewDidLoad];
-    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
     
