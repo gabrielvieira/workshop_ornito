@@ -24,14 +24,24 @@
 }
 
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    UISearchBar *searchBar = self.searchDisplayController.searchBar;
+    CGRect rect = searchBar.frame;
+    rect.origin.y = 200;
+    searchBar.frame = rect;
+}
+
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
     
-    
+    NSString *c = @"";
+    [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
         // Initialize the recipes array
     
     
@@ -41,7 +51,8 @@
 
 -(void)buscaGrupo : (NSString*) busca
 {
-    NSArray *d = (NSArray*)[WebService searchGroup:@""];
+    NSLog(@"%@" , busca);
+    NSArray *d = (NSArray*)[WebService searchGroup:busca];
     for (NSDictionary *n in d) {
         Group *g = Group.new;
         g.name = [n objectForKey:@"name"];
@@ -51,7 +62,17 @@
         g.username = [n objectForKey:@"user"];
         
         [recipes addObject:g];
+        
+        
     }
+    
+    if (self.tableView == self.searchDisplayController.searchResultsTableView) {
+       [self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+        
+    } else {
+        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
