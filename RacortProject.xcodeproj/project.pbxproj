@@ -28,6 +28,8 @@
 		CD197E1719B89EC8004F396C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1419B89EC8004F396C /* home.png */; };
 		CD197E1819B89EC8004F396C /* troca.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1519B89EC8004F396C /* troca.png */; };
 		CD197E1B19B8AD93004F396C /* ProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197E1A19B8AD93004F396C /* ProjectsTableViewController.m */; };
+		CD197E6B19B8BA37004F396C /* CreateGrouVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197E6A19B8BA37004F396C /* CreateGrouVC.m */; };
+		CD197E7119B8BA77004F396C /* CreateProjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197E7019B8BA77004F396C /* CreateProjectVC.m */; };
 		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
 		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
 		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
@@ -92,6 +94,10 @@
 		CD197E1519B89EC8004F396C /* troca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = troca.png; sourceTree = "<group>"; };
 		CD197E1919B8AD93004F396C /* ProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsTableViewController.h; path = ../ProjectsTableViewController.h; sourceTree = "<group>"; };
 		CD197E1A19B8AD93004F396C /* ProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsTableViewController.m; path = ../ProjectsTableViewController.m; sourceTree = "<group>"; };
+		CD197E6919B8BA37004F396C /* CreateGrouVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGrouVC.h; sourceTree = "<group>"; };
+		CD197E6A19B8BA37004F396C /* CreateGrouVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGrouVC.m; sourceTree = "<group>"; };
+		CD197E6F19B8BA77004F396C /* CreateProjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateProjectVC.h; path = ../CreateProjectVC.h; sourceTree = "<group>"; };
+		CD197E7019B8BA77004F396C /* CreateProjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateProjectVC.m; path = ../CreateProjectVC.m; sourceTree = "<group>"; };
 		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -221,6 +227,10 @@
 				CD7FBFDC19B7927D005F5D1A /* Single.h */,
 				CD7FBFDD19B7927D005F5D1A /* Single.m */,
 				CD78627519B732D200154FB3 /* Main.storyboard */,
+				CD197E6919B8BA37004F396C /* CreateGrouVC.h */,
+				CD197E6A19B8BA37004F396C /* CreateGrouVC.m */,
+				CD197E6F19B8BA77004F396C /* CreateProjectVC.h */,
+				CD197E7019B8BA77004F396C /* CreateProjectVC.m */,
 				CD7FBFD619B78D8C005F5D1A /* Project.h */,
 				CD7FBFD719B78D8C005F5D1A /* Project.m */,
 				CD0483CE19B7B1390098F495 /* Group.h */,
@@ -396,7 +406,9 @@
 				CD7FBFE419B7A099005F5D1A /* HomeVC.m in Sources */,
 				CD197DEF19B885A6004F396C /* ProjectsViewController.m in Sources */,
 				C0EF4CAC19B7AD260017150B /* RecipeTableViewController.m in Sources */,
+				CD197E7119B8BA77004F396C /* CreateProjectVC.m in Sources */,
 				C0EF4CAA19B7AD260017150B /* RecipeDetailViewController.m in Sources */,
+				CD197E6B19B8BA37004F396C /* CreateGrouVC.m in Sources */,
 				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
 				CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */,
 				CD0483D019B7B1390098F495 /* Group.m in Sources */,
