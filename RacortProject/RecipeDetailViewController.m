@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   [ self.tabBarController.tabBar setHidden:YES];
     
 	self.title = self.recipe.name;
     self.prepTimeLabel.text = self.recipe.prepTime;
@@ -43,7 +44,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btn:(id)sender {
+
+- (IBAction)backButton:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 @end

@@ -14,8 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
-- (IBAction)btn:(id)sender;
 
 @property (nonatomic, strong) Recipe *recipe;
+- (IBAction)backButton:(id)sender;
 
 @end

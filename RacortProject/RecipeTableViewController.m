@@ -27,6 +27,7 @@
     [super viewDidLoad];
     [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     
+    
     self.navigationController.navigationBarHidden = YES;
     // Initialize the recipes array
     Recipe *recipe1 = [Recipe new];
@@ -133,6 +134,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [ self.tabBarController.tabBar setHidden:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

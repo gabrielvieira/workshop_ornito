@@ -11,6 +11,10 @@
 		C0EF4CAB19B7AD260017150B /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA719B7AD260017150B /* RecipeTableCell.m */; };
 		C0EF4CAC19B7AD260017150B /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA919B7AD260017150B /* RecipeTableViewController.m */; };
 		C0EF4CAF19B7ADAE0017150B /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CAE19B7ADAE0017150B /* Recipe.m */; };
+		C0EF4CB319B7BC8E0017150B /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4CB119B7BC8E0017150B /* go.png */; };
+		C0EF4CB419B7BC8E0017150B /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4CB219B7BC8E0017150B /* login.png */; };
+		C0EF4CB619B800410017150B /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4CB519B800410017150B /* top.png */; };
+		C0EF4CB819B802DA0017150B /* seta.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4CB719B802DA0017150B /* seta.png */; };
 		C0FB218919B74E1200C05F88 /* PageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218819B74E1200C05F88 /* PageVC.m */; };
 		C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */; };
 		CD0483D019B7B1390098F495 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0483CF19B7B1390098F495 /* Group.m */; };
@@ -57,6 +61,10 @@
 		C0EF4CA919B7AD260017150B /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
 		C0EF4CAD19B7ADAE0017150B /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		C0EF4CAE19B7ADAE0017150B /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		C0EF4CB119B7BC8E0017150B /* go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go.png; sourceTree = "<group>"; };
+		C0EF4CB219B7BC8E0017150B /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		C0EF4CB519B800410017150B /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		C0EF4CB719B802DA0017150B /* seta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seta.png; sourceTree = "<group>"; };
 		C0FB218719B74E1200C05F88 /* PageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageVC.h; sourceTree = "<group>"; };
 		C0FB218819B74E1200C05F88 /* PageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageVC.m; sourceTree = "<group>"; };
 		C0FB218A19B74ECA00C05F88 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
@@ -124,6 +132,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0EF4CB019B7BC8E0017150B /* img */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF4CB719B802DA0017150B /* seta.png */,
+				C0EF4CB519B800410017150B /* top.png */,
+				C0EF4CB119B7BC8E0017150B /* go.png */,
+				C0EF4CB219B7BC8E0017150B /* login.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		CD78625719B732D200154FB3 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +177,7 @@
 		CD78626919B732D200154FB3 /* RacortProject */ = {
 			isa = PBXGroup;
 			children = (
+				C0EF4CB019B7BC8E0017150B /* img */,
 				C0EF4CAD19B7ADAE0017150B /* Recipe.h */,
 				C0EF4CAE19B7ADAE0017150B /* Recipe.m */,
 				C0EF4CA419B7AD260017150B /* RecipeDetailViewController.h */,
@@ -313,8 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD78627C19B732D200154FB3 /* Images.xcassets in Resources */,
+				C0EF4CB419B7BC8E0017150B /* login.png in Resources */,
 				CD78626E19B732D200154FB3 /* InfoPlist.strings in Resources */,
+				C0EF4CB619B800410017150B /* top.png in Resources */,
 				CD78627719B732D200154FB3 /* Main.storyboard in Resources */,
+				C0EF4CB319B7BC8E0017150B /* go.png in Resources */,
+				C0EF4CB819B802DA0017150B /* seta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

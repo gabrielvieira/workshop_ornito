@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.hidesBottomBarWhenPushed = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -33,6 +35,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL) hidesBottomBarWhenPushed {
+    return YES;
 }
 
 /*
