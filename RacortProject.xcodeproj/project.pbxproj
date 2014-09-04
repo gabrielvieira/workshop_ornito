@@ -18,7 +18,6 @@
 		C0FB218919B74E1200C05F88 /* PageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218819B74E1200C05F88 /* PageVC.m */; };
 		C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */; };
 		CD0483D019B7B1390098F495 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0483CF19B7B1390098F495 /* Group.m */; };
-		CD197DEC19B8856B004F396C /* ProjectsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197DEB19B8856B004F396C /* ProjectsTableView.m */; };
 		CD197DEF19B885A6004F396C /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197DEE19B885A6004F396C /* ProjectsViewController.m */; };
 		CD197DF219B88636004F396C /* ProjectsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197DF119B88636004F396C /* ProjectsTableCell.m */; };
 		CD197DF819B894B0004F396C /* projeto.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197DF319B894B0004F396C /* projeto.png */; };
@@ -26,6 +25,7 @@
 		CD197E1619B89EC8004F396C /* grupo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1319B89EC8004F396C /* grupo.png */; };
 		CD197E1719B89EC8004F396C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1419B89EC8004F396C /* home.png */; };
 		CD197E1819B89EC8004F396C /* troca.png in Resources */ = {isa = PBXBuildFile; fileRef = CD197E1519B89EC8004F396C /* troca.png */; };
+		CD197E1B19B8AD93004F396C /* ProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD197E1A19B8AD93004F396C /* ProjectsTableViewController.m */; };
 		CD78626419B732D200154FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626319B732D200154FB3 /* Foundation.framework */; };
 		CD78626619B732D200154FB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626519B732D200154FB3 /* CoreGraphics.framework */; };
 		CD78626819B732D200154FB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD78626719B732D200154FB3 /* UIKit.framework */; };
@@ -77,8 +77,6 @@
 		C0FB218B19B74ECA00C05F88 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		CD0483CE19B7B1390098F495 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		CD0483CF19B7B1390098F495 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
-		CD197DEA19B8856B004F396C /* ProjectsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsTableView.h; sourceTree = "<group>"; };
-		CD197DEB19B8856B004F396C /* ProjectsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsTableView.m; sourceTree = "<group>"; };
 		CD197DED19B885A6004F396C /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		CD197DEE19B885A6004F396C /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 		CD197DF019B88636004F396C /* ProjectsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsTableCell.h; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		CD197E1319B89EC8004F396C /* grupo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grupo.png; sourceTree = "<group>"; };
 		CD197E1419B89EC8004F396C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		CD197E1519B89EC8004F396C /* troca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = troca.png; sourceTree = "<group>"; };
+		CD197E1919B8AD93004F396C /* ProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsTableViewController.h; path = ../ProjectsTableViewController.h; sourceTree = "<group>"; };
+		CD197E1A19B8AD93004F396C /* ProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsTableViewController.m; path = ../ProjectsTableViewController.m; sourceTree = "<group>"; };
 		CD78626019B732D200154FB3 /* RacortProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacortProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD78626319B732D200154FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD78626519B732D200154FB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,10 +206,10 @@
 				C0EF4CA719B7AD260017150B /* RecipeTableCell.m */,
 				CD197DED19B885A6004F396C /* ProjectsViewController.h */,
 				CD197DEE19B885A6004F396C /* ProjectsViewController.m */,
+				CD197E1919B8AD93004F396C /* ProjectsTableViewController.h */,
+				CD197E1A19B8AD93004F396C /* ProjectsTableViewController.m */,
 				CD197DF019B88636004F396C /* ProjectsTableCell.h */,
 				CD197DF119B88636004F396C /* ProjectsTableCell.m */,
-				CD197DEA19B8856B004F396C /* ProjectsTableView.h */,
-				CD197DEB19B8856B004F396C /* ProjectsTableView.m */,
 				CD7FBFE219B7A099005F5D1A /* HomeVC.h */,
 				CD7FBFE319B7A099005F5D1A /* HomeVC.m */,
 				CD7FBFDC19B7927D005F5D1A /* Single.h */,
@@ -391,8 +391,8 @@
 				C0EF4CAA19B7AD260017150B /* RecipeDetailViewController.m in Sources */,
 				CD78627419B732D200154FB3 /* AppDelegate.m in Sources */,
 				CD7FBFDE19B7927D005F5D1A /* Single.m in Sources */,
-				CD197DEC19B8856B004F396C /* ProjectsTableView.m in Sources */,
 				CD0483D019B7B1390098F495 /* Group.m in Sources */,
+				CD197E1B19B8AD93004F396C /* ProjectsTableViewController.m in Sources */,
 				CD7FBFD819B78D8C005F5D1A /* Project.m in Sources */,
 				C0EF4CAF19B7ADAE0017150B /* Recipe.m in Sources */,
 				C0FB218919B74E1200C05F88 /* PageVC.m in Sources */,
