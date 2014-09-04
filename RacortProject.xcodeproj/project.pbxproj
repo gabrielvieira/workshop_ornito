@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C008BA3819B8BA3D00A2DDF5 /* tela1.png in Resources */ = {isa = PBXBuildFile; fileRef = C008BA3619B8BA3D00A2DDF5 /* tela1.png */; };
 		C008BA3919B8BA3D00A2DDF5 /* tela2.png in Resources */ = {isa = PBXBuildFile; fileRef = C008BA3719B8BA3D00A2DDF5 /* tela2.png */; };
+		C008BA7B19B8C18100A2DDF5 /* GroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C008BA7A19B8C18100A2DDF5 /* GroupVC.m */; };
 		C0EF4CAA19B7AD260017150B /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA519B7AD260017150B /* RecipeDetailViewController.m */; };
 		C0EF4CAB19B7AD260017150B /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA719B7AD260017150B /* RecipeTableCell.m */; };
 		C0EF4CAC19B7AD260017150B /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA919B7AD260017150B /* RecipeTableViewController.m */; };
@@ -65,6 +66,8 @@
 /* Begin PBXFileReference section */
 		C008BA3619B8BA3D00A2DDF5 /* tela1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela1.png; sourceTree = "<group>"; };
 		C008BA3719B8BA3D00A2DDF5 /* tela2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela2.png; sourceTree = "<group>"; };
+		C008BA7919B8C18100A2DDF5 /* GroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupVC.h; sourceTree = "<group>"; };
+		C008BA7A19B8C18100A2DDF5 /* GroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupVC.m; sourceTree = "<group>"; };
 		C0EF4CA419B7AD260017150B /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		C0EF4CA519B7AD260017150B /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		C0EF4CA619B7AD260017150B /* RecipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableCell.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				CD78627919B732D200154FB3 /* ViewController.m */,
 				C0FB218719B74E1200C05F88 /* PageVC.h */,
 				C0FB218819B74E1200C05F88 /* PageVC.m */,
+				C008BA7919B8C18100A2DDF5 /* GroupVC.h */,
+				C008BA7A19B8C18100A2DDF5 /* GroupVC.m */,
 			);
 			name = Views;
 			path = RacortProject;
@@ -404,6 +409,7 @@
 				CD78627A19B732D200154FB3 /* ViewController.m in Sources */,
 				C0FB218C19B74ECA00C05F88 /* PageContentViewController.m in Sources */,
 				CD7FBFE419B7A099005F5D1A /* HomeVC.m in Sources */,
+				C008BA7B19B8C18100A2DDF5 /* GroupVC.m in Sources */,
 				CD197DEF19B885A6004F396C /* ProjectsViewController.m in Sources */,
 				C0EF4CAC19B7AD260017150B /* RecipeTableViewController.m in Sources */,
 				CD197E7119B8BA77004F396C /* CreateProjectVC.m in Sources */,
