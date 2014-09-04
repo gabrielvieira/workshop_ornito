@@ -24,18 +24,11 @@
 }
 
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    UISearchBar *searchBar = self.searchDisplayController.searchBar;
-    CGRect rect = searchBar.frame;
-    rect.origin.y = 200;
-    searchBar.frame = rect;
-}
-
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
+    
     [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
