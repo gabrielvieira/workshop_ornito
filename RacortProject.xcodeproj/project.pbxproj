@@ -10,6 +10,7 @@
 		C008BA3819B8BA3D00A2DDF5 /* tela1.png in Resources */ = {isa = PBXBuildFile; fileRef = C008BA3619B8BA3D00A2DDF5 /* tela1.png */; };
 		C008BA3919B8BA3D00A2DDF5 /* tela2.png in Resources */ = {isa = PBXBuildFile; fileRef = C008BA3719B8BA3D00A2DDF5 /* tela2.png */; };
 		C008BA7B19B8C18100A2DDF5 /* GroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C008BA7A19B8C18100A2DDF5 /* GroupVC.m */; };
+		C0DD51ED19B930C6005DFAF1 /* participar.png in Resources */ = {isa = PBXBuildFile; fileRef = C0DD51EC19B930C6005DFAF1 /* participar.png */; };
 		C0EF4CAA19B7AD260017150B /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA519B7AD260017150B /* RecipeDetailViewController.m */; };
 		C0EF4CAB19B7AD260017150B /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA719B7AD260017150B /* RecipeTableCell.m */; };
 		C0EF4CAC19B7AD260017150B /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF4CA919B7AD260017150B /* RecipeTableViewController.m */; };
@@ -71,6 +72,7 @@
 		C008BA3719B8BA3D00A2DDF5 /* tela2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela2.png; sourceTree = "<group>"; };
 		C008BA7919B8C18100A2DDF5 /* GroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupVC.h; sourceTree = "<group>"; };
 		C008BA7A19B8C18100A2DDF5 /* GroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupVC.m; sourceTree = "<group>"; };
+		C0DD51EC19B930C6005DFAF1 /* participar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = participar.png; sourceTree = "<group>"; };
 		C0EF4CA419B7AD260017150B /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		C0EF4CA519B7AD260017150B /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		C0EF4CA619B7AD260017150B /* RecipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableCell.h; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		C0EF4CB019B7BC8E0017150B /* img */ = {
 			isa = PBXGroup;
 			children = (
+				C0DD51EC19B930C6005DFAF1 /* participar.png */,
 				CD197E7519B8D208004F396C /* plus.png */,
 				C008BA3619B8BA3D00A2DDF5 /* tela1.png */,
 				C008BA3719B8BA3D00A2DDF5 /* tela2.png */,
@@ -390,6 +393,7 @@
 				CD197E1719B89EC8004F396C /* home.png in Resources */,
 				C008BA3919B8BA3D00A2DDF5 /* tela2.png in Resources */,
 				C0EF4CB419B7BC8E0017150B /* login.png in Resources */,
+				C0DD51ED19B930C6005DFAF1 /* participar.png in Resources */,
 				CD78626E19B732D200154FB3 /* InfoPlist.strings in Resources */,
 				CD197E1819B89EC8004F396C /* troca.png in Resources */,
 				C0EF4CB619B800410017150B /* top.png in Resources */,

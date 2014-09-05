@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lugar;
 @property (weak, nonatomic) IBOutlet UILabel *horario;
 @property UITextView* textArea;
+- (IBAction)participar:(id)sender;
 
 - (IBAction)backButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *novo;

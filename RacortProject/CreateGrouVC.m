@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     
-    CGPoint point = CGPointMake(10, 200);
+    CGPoint point = CGPointMake(10,230);
     self.textArea = [self createTextAreaForActionPlan:@"" at:point];
     [[self groupDuration]setDelegate:self];
     [[self groupHorary]setDelegate:self];

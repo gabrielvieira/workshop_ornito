@@ -44,6 +44,19 @@
 }
 
 
+- (IBAction)participar:(id)sender {
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Participar"
+                                                        message:@"Voce Esta Participando do Grupo !"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    
+    alertView.alertViewStyle = UIAlertViewStyleDefault;
+    
+    [alertView show];
+}
+
 - (IBAction)backButton:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
