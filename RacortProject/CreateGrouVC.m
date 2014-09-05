@@ -7,6 +7,9 @@
 //
 
 #import "CreateGrouVC.h"
+#import "Group.h"
+#import "Single.h"
+#import "WebService.h"
 
 @interface CreateGrouVC ()
 
@@ -21,6 +24,23 @@
         // Custom initialization
     }
     return self;
+}
+
+-(IBAction)selector:(id)sender
+{
+    Group* newGroup = [[Group alloc]init];
+    Single* singleton = [Single alloc];
+    
+    [newGroup setName:[self.groupSubject text]];
+    [newGroup setHorario:[self.groupHorary text]];
+    [newGroup setLocal:[self.groupLocal text]];
+    [newGroup setUsername:[singleton userName]];
+    [newGroup setDate:[self.groupDate text]];
+    [newGroup setContact:[self.groupContact text]];
+    [newGroup setDescription:[self.textArea text]];
+    newGroup.id_user = 2;
+    
+    [WebService insertGroup:newGroup];
 }
 
 - (void)viewDidLoad

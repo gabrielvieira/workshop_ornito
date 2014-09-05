@@ -107,7 +107,7 @@
     
     NSString *content = [NSString stringWithUTF8String:[returnData bytes]];
     
-    int x = [content integerValue];
+    int x = (int)[content integerValue];
     
     if (x) {
         return 1;

@@ -11,16 +11,16 @@
 @interface Group : NSObject
 
 
-@property NSString *subject;
 @property NSString *managerName;
 @property NSString* date;
-@property NSString* name;
 @property NSString* description;
-@property NSString* contact;
 @property NSString* horario;
-@property NSString* username;
 @property NSString* duration;
 @property NSString* local;
+@property NSString* contact;
+@property NSString* name;
+@property NSString* username;
+
 @property int id_user;
 
 @end

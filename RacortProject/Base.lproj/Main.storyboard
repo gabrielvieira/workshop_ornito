@@ -408,25 +408,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Horario de inicio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Elo-sf-Jq2">
-                                <rect key="frame" x="170" y="225" width="140" height="30"/>
+                                <rect key="frame" x="10" y="192" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Duração" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-OC-bq5">
-                                <rect key="frame" x="10" y="225" width="140" height="30"/>
+                                <rect key="frame" x="190" y="192" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-N7-lvc">
-                                <rect key="frame" x="10" y="144" width="300" height="30"/>
+                                <rect key="frame" x="10" y="116" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Materia estudada" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-bm-Gma">
-                                <rect key="frame" x="10" y="187" width="300" height="30"/>
+                                <rect key="frame" x="10" y="154" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -448,7 +448,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="go.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-rT-kka">
-                                <rect key="frame" x="65" y="96" width="190" height="40"/>
+                                <rect key="frame" x="65" y="68" width="190" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2S-e2-PUe">
@@ -457,13 +457,30 @@
                                 <state key="normal" image="adicionar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selector:" destination="QrY-Fi-oTp" eventType="touchUpInside" id="7lA-oV-St5"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0J4-Tb-kqP">
+                                <rect key="frame" x="10" y="230" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contato(Tel)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-vi-mKo">
+                                <rect key="frame" x="190" y="230" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hyw-ho-zSy"/>
                     <connections>
                         <outlet property="addGroupButton" destination="T2S-e2-PUe" id="49P-pM-PmP"/>
+                        <outlet property="groupContact" destination="8SO-vi-mKo" id="lc1-Vg-HaZ"/>
+                        <outlet property="groupDate" destination="0J4-Tb-kqP" id="ZKO-Dn-Nds"/>
                         <outlet property="groupDuration" destination="ceh-OC-bq5" id="J3g-VD-Yrg"/>
                         <outlet property="groupHorary" destination="Elo-sf-Jq2" id="jpe-tp-mnN"/>
                         <outlet property="groupLocal" destination="RaC-N7-lvc" id="qsN-i5-cXl"/>
