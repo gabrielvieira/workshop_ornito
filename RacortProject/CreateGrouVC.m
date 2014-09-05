@@ -40,7 +40,34 @@
     [newGroup setDescription:[self.textArea text]];
     newGroup.id_user = 2;
     
-    [WebService insertGroup:newGroup];
+    if([WebService insertGroup:newGroup])
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Grupo"
+                                                            message:@"Grupo de Estudos criado com sucesso!"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        
+        alertView.alertViewStyle = UIAlertViewStyleDefault;
+        
+        [alertView show];
+        
+        
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Erro"
+                                                            message:@"Algo deu errado ao criar o Grupo"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        
+        alertView.alertViewStyle = UIAlertViewStyleDefault;
+        
+        [alertView show];
+    }
+    
+
 }
 
 - (void)viewDidLoad
@@ -56,6 +83,13 @@
     [[self textArea]setDelegate:self];
 
     // Do any additional setup after loading the view.
+}
+
+-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    
+  [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField

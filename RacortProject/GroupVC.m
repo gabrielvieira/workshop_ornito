@@ -35,15 +35,19 @@
 {
     
     [super viewDidLoad];
+    
+  //  NSString *c = @"";
+   // [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
+
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
     
     recipes = [[NSMutableArray alloc]init];
     self.navigationController.navigationBarHidden = YES;
-    
+    /*
     NSString *c = @"";
     [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
-    
+    */
     
     // Initialize the recipes array
     
@@ -89,6 +93,16 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [ self.tabBarController.tabBar setHidden:NO];
+    
+}
+
+-(void )viewDidAppear:(BOOL)animated
+{
+    [recipes removeAllObjects];
+    [searchResults removeAllObjects];
+    
+    NSString *c = @"";
+    [self performSelectorInBackground:@selector(buscaGrupo:) withObject:c];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

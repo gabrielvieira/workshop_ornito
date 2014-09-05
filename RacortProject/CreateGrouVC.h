@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateGrouVC : UIViewController <UITextViewDelegate, UITextFieldDelegate>
+@interface CreateGrouVC : UIViewController <UITextViewDelegate, UITextFieldDelegate, UIAlertViewDelegate>
 
 @property UITextView* textArea;
 - (IBAction)backButton:(id)sender;
